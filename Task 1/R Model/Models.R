@@ -79,7 +79,7 @@ confusion_matrix_log <- table(logistic_predictions, test_target)
 log_accuracy <- sum(diag(confusion_matrix_log)) / sum(confusion_matrix_log)
 
 # Print the evaluation metric
-print(paste("Accuracy:", accuracy))
+print(paste("Accuracy:", log_accuracy))
 summary(logistic_model)
 
 # Create a data frame with predicted and actual values
