@@ -14,9 +14,6 @@ data = pd.read_csv('D:\\Data Analyst\\CodSoft\\Task 3\\advertising.csv')
 missing_values = data.isnull().sum()
 print("Missing Values:\n", missing_values)
 
-# Handle missing values (if necessary)
-# Example: data['Feature'].fillna(data['Feature'].mean(), inplace=True)
-
 # Step 3: Data Analysis and Visualization
 # Explore the data
 print(data.describe())  # Summary statistics
