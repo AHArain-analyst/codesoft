@@ -7,7 +7,7 @@ from sklearn.linear_model import LinearRegression
 from sklearn.metrics import mean_absolute_error, mean_squared_error, r2_score
 
 # Step 1: Load and Prepare Data
-data = pd.read_csv('D:\\Data Analyst\\CodSoft\\Task 3\\advertising.csv')  # Replace 'sales_data.csv' with your dataset file
+data = pd.read_csv('D:\\Data Analyst\\CodSoft\\Task 3\\advertising.csv') 
 
 # Step 2: Data Wrangling and Cleaning
 # Check for missing values
