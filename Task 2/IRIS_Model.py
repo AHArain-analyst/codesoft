@@ -13,8 +13,8 @@ from scipy import interp
 iris_data = pd.read_csv('D:\\Data Analyst\\CodSoft\\Task 2\\IRIS.csv')
 
 # Split the data into features (X) and target labels (y)
-X = iris_data.drop('Species', axis=1)
-y = iris_data['Species']
+X = iris_data.drop('species', axis=1)
+y = iris_data['species']
 
 # Split the data into training and testing sets (70% training, 30% testing)
 X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.3, random_state=123)
