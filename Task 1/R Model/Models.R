@@ -143,14 +143,11 @@ kmeans_y_pred_class <- ifelse(kmeans_clusters == 2, 0, 1)
 Titanic$cluster <- as.factor(kmeans_clusters)
 
 # Add cluster labels to the original dataset
-# You need to assign the cluster labels to kmeans_y_pred_class
 kmeans_y_pred_class <- ifelse(kmeans_clusters == 2, 0, 1)
 
 # Ensure that kmeans_y_pred_class and test_target have the same length
 if (length(kmeans_y_pred_class) != length(test_target)) {
   # Adjust the length of kmeans_y_pred_class or test_target as needed
-  # For example, you can subset or modify one of them to match the length of the other.
-  # For instance, if test_target is longer:
   kmeans_y_pred_class <- kmeans_y_pred_class[1:length(test_target)]
 }
 
